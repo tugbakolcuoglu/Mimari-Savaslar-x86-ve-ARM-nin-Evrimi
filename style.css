@@ -1530,3 +1530,31 @@ body.presentation-mode .section-header h2 {
         padding-top: 28px;
     }
 }
+
+/* === QUIZ FIELDSET / LEGEND FIX === */
+
+#sec-quiz .quiz-grid {
+    gap: 24px 18px;
+}
+
+#sec-quiz .quiz-card {
+    position: relative;
+    padding: 24px 20px 20px;
+    margin: 0;
+}
+
+#sec-quiz .quiz-card legend {
+    float: left;
+    width: 100%;
+    margin: 0 0 18px;
+    padding: 0;
+    color: var(--heading);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+#sec-quiz .quiz-card label {
+    clear: both;
+    display: block;
+    margin: 12px 0;
+}
