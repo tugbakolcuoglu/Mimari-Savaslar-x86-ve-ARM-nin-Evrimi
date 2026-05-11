@@ -84,6 +84,7 @@
                 <option value="sec-conclusion">Sonuç</option>
             </select>
         </div>
+        <!-- Sidebar masaüstü görünüm içindir, mobile-topbar ise küçük ekranlarda kullanılan üst navigasyondur. -->
 
         <main class="main-content" id="main-content">
             <div class="main-toolbar">
@@ -100,8 +101,10 @@
                     <p class="eyebrow">Genel Bakış</p>
                     <h2>x86 vs ARM: Performans mı, verimlilik mi?</h2>
                     <p>
-                        Masaüstü bilgisayarların klasik gücü ile mobil dünyanın enerji verimliliği artık aynı sahada
-                        yarışıyor.
+                        İşlemci mimarileri günümüzde yalnızca teknik bir konu değildir. Bilgisayarların hızı,
+                        telefonların
+                        pil ömrü, sunucuların enerji maliyeti ve yapay zeka uygulamalarının verimliliği doğrudan işlemci
+                        tasarımıyla bağlantılıdır.
                     </p>
                 </header>
 
@@ -111,32 +114,34 @@
                         <h3>İki mimari, iki farklı tasarım felsefesi</h3>
                         <p>
                             Bu web sayfası, <strong>x86</strong> ve <strong>ARM</strong> mimarilerini yalnızca teorik
-                            olarak değil;
-                            güç tüketimi, yazılım uyumluluğu, modern çip tasarımı, hibrit çekirdekler ve kullanım
-                            senaryoları üzerinden
-                            etkileşimli şekilde inceler.
+                            olarak değil; güç tüketimi, yazılım uyumluluğu, modern çip tasarımı, hibrit çekirdekler,
+                            özel hızlandırıcılar ve kullanım senaryoları üzerinden etkileşimli şekilde inceler.
+                            Amaç, hangi mimarinin “daha iyi” olduğunu tek cümleyle söylemek değil; hangi koşulda
+                            hangi yaklaşımın avantaj sağladığını anlaşılır biçimde göstermektir.
                         </p>
                     </div>
 
                     <div class="hero-grid">
                         <div class="mini-metric">
                             <strong>x86</strong>
-                            <span>CISC tabanlı güçlü PC/sunucu geçmişi</span>
+                            <span>CISC tabanlı, PC ve sunucu dünyasında güçlü geçmişe sahip mimari.</span>
                         </div>
 
                         <div class="mini-metric">
                             <strong>ARM</strong>
-                            <span>RISC tabanlı verimlilik ve mobil üstünlük</span>
+                            <span>RISC tabanlı, düşük güç tüketimi ve verimlilik odaklı mimari.</span>
                         </div>
 
                         <div class="mini-metric">
                             <strong>Günümüz</strong>
-                            <span>İki taraf da hibrit ve özel hızlandırıcılara yöneliyor</span>
+                            <span>İki taraf da hibrit çekirdekler, yapay zeka hızlandırıcıları ve özel çip tasarımlarına
+                                yöneliyor.</span>
                         </div>
 
                         <div class="mini-metric">
                             <strong>Gelecek</strong>
-                            <span>CPU + GPU + NPU + yazılım optimizasyonu belirleyici</span>
+                            <span>CPU tek başına yeterli değil; GPU, NPU, bellek ve yazılım optimizasyonu belirleyici
+                                olacak.</span>
                         </div>
                     </div>
                 </div>
@@ -147,10 +152,14 @@
                         <p class="card-subtitle">Intel / AMD ekosistemi</p>
 
                         <ul class="stack-list">
-                            <li><strong>Felsefe:</strong> CISC, yani karmaşık komut seti.</li>
-                            <li><strong>Geleneksel alan:</strong> Masaüstü, dizüstü, iş istasyonu ve sunucu.</li>
-                            <li><strong>Avantaj:</strong> Yüksek ham performans, eski yazılımlarla geniş uyumluluk.</li>
-                            <li><strong>Zorluk:</strong> Yüksek güç tüketimi ve ısı yönetimi ihtiyacı.</li>
+                            <li><strong>Felsefe:</strong> CISC yaklaşımına dayanır. Daha karmaşık komutlarla bazı
+                                işlemleri daha az komutla ifade edebilir.</li>
+                            <li><strong>Geleneksel alan:</strong> Masaüstü bilgisayar, dizüstü bilgisayar, iş istasyonu
+                                ve sunucu sistemlerinde çok yaygındır.</li>
+                            <li><strong>Avantaj:</strong> Yüksek ham performans, geniş donanım desteği ve eski
+                                yazılımlarla güçlü uyumluluk sunar.</li>
+                            <li><strong>Zorluk:</strong> Yüksek performans altında daha fazla güç tüketebilir ve etkili
+                                soğutma ihtiyacı doğurabilir.</li>
                         </ul>
                     </article>
 
@@ -159,11 +168,14 @@
                         <p class="card-subtitle">Apple / Qualcomm / MediaTek / bulut çipleri</p>
 
                         <ul class="stack-list">
-                            <li><strong>Felsefe:</strong> RISC, yani sadeleştirilmiş komut seti.</li>
-                            <li><strong>Geleneksel alan:</strong> Telefon, tablet, IoT ve gömülü sistemler.</li>
-                            <li><strong>Avantaj:</strong> Watt başına yüksek performans, düşük ısı, SoC esnekliği.</li>
-                            <li><strong>Zorluk:</strong> Bazı masaüstü yazılımlarında uyumluluk veya emülasyon ihtiyacı.
-                            </li>
+                            <li><strong>Felsefe:</strong> RISC yaklaşımına dayanır. Daha sade ve düzenli komutlarla
+                                verimli işlem yürütmeyi hedefler.</li>
+                            <li><strong>Geleneksel alan:</strong> Telefon, tablet, IoT cihazları, gömülü sistemler ve
+                                düşük güç tüketimli cihazlarda yaygındır.</li>
+                            <li><strong>Avantaj:</strong> Watt başına yüksek performans, düşük ısı üretimi, uzun pil
+                                ömrü ve SoC tasarım esnekliği sağlar.</li>
+                            <li><strong>Zorluk:</strong> Bazı masaüstü yazılımlarında uyumluluk sorunu yaşanabilir veya
+                                emülasyon gerekebilir.</li>
                         </ul>
                     </article>
                 </div>
@@ -172,15 +184,15 @@
                     <div class="insight">
                         <span>01</span>
                         <strong>Komut seti tek başına yeterli değildir.</strong>
-                        <p>Modern performans; üretim teknolojisi, önbellek, bellek mimarisi, derleyici ve özel
-                            hızlandırıcılarla birlikte belirlenir.</p>
+                        <p>Modern performans; üretim teknolojisi, önbellek tasarımı, bellek mimarisi, derleyici kalitesi
+                            ve özel hızlandırıcılarla birlikte ortaya çıkar.</p>
                     </div>
 
                     <div class="insight">
                         <span>02</span>
                         <strong>Güç tüketimi stratejik bir konudur.</strong>
-                        <p>Aynı performansı daha az watt ile vermek, özellikle mobil ve veri merkezi dünyasında büyük
-                            avantajdır.</p>
+                        <p>Aynı performansı daha az watt ile verebilen işlemciler, özellikle mobil cihazlarda ve veri
+                            merkezlerinde büyük maliyet avantajı oluşturur.</p>
                     </div>
 
                     <div class="insight">
@@ -197,43 +209,44 @@
                     <p class="eyebrow">Zaman Çizelgesi</p>
                     <h2>Tarihsel Gelişim</h2>
                     <p>
-                        x86 ve ARM uzun süre farklı pazarlarda büyüdü. Bugün ise dizüstü, sunucu ve yapay zeka
-                        alanlarında yolları kesişiyor.
+                        x86 ve ARM uzun süre farklı pazarlarda büyüdü. x86 kişisel bilgisayarlar ve sunucularla
+                        güç kazanırken, ARM düşük güç tüketimi sayesinde mobil ve gömülü sistemlerin temel mimarisi
+                        haline geldi. Günümüzde ise bu iki dünyanın sınırları giderek birbirine yaklaşmaktadır.
                     </p>
                 </header>
 
                 <div class="timeline-layout">
                     <div class="timeline">
                         <button type="button" class="timeline-item" data-title="x86'nın PC dünyasında yükselişi"
-                            data-detail="x86 mimarisi kişisel bilgisayar ekosistemiyle büyüdü. Geniş yazılım uyumluluğu ve masaüstü performansı, bu mimariyi yıllarca PC dünyasının merkezi yaptı.">
+                            data-detail="x86 mimarisi, Intel 8086 ailesiyle başlayıp IBM PC ekosisteminin yaygınlaşmasıyla kişisel bilgisayar dünyasında standart hale geldi. Bu dönemde en büyük avantajı, yazılım geliştiricilerin ve donanım üreticilerinin aynı ekosistem etrafında toplanmasıydı. Geriye dönük uyumluluk sayesinde eski yazılımlar yeni işlemcilerde çalışmaya devam etti. Bu durum x86’yı yalnızca teknik bir mimari değil, aynı zamanda güçlü bir yazılım ve donanım ekosistemi haline getirdi.">
                             <span class="timeline-dot"></span>
                             <strong>1970'ler - 1980'ler</strong>
                             <em>x86 kişisel bilgisayarlarda güç kazandı</em>
                         </button>
 
                         <button type="button" class="timeline-item" data-title="ARM'ın düşük güç felsefesi"
-                            data-detail="ARM, sade komut yapısı ve düşük güç tüketimi sayesinde gömülü sistemlerde ve taşınabilir cihazlarda öne çıkmaya başladı.">
+                            data-detail="ARM, düşük güç tüketimi ve sade komut seti yaklaşımıyla gömülü sistemlerde öne çıktı. x86 masaüstü performansına odaklanırken ARM daha küçük, daha serin ve daha az enerji harcayan cihazlar için ideal hale geldi. Bu yüzden router, oyun konsolu, taşınabilir cihazlar, endüstriyel kontrol sistemleri ve erken mobil cihazlarda yaygınlaşmaya başladı.">
                             <span class="timeline-dot"></span>
                             <strong>1990'lar</strong>
                             <em>ARM gömülü sistemlerde yaygınlaştı</em>
                         </button>
 
                         <button type="button" class="timeline-item" data-title="Mobil devrim"
-                            data-detail="Akıllı telefonlar ve tabletler, yüksek pil ömrü ve düşük ısı gerektirdiği için ARM mimarisi mobil dünyanın temel mimarisi haline geldi.">
+                            data-detail="Akıllı telefon ve tabletlerin yükselişi, ARM mimarisinin en büyük kırılma noktası oldu. Mobil cihazlarda pil ömrü, düşük ısı ve küçük fiziksel alan masaüstü performansından daha kritik hale geldi. ARM tabanlı SoC tasarımları CPU, GPU, modem, görüntü işleme ve güvenlik birimlerini tek çipte birleştirerek mobil dünyada büyük avantaj sağladı.">
                             <span class="timeline-dot"></span>
                             <strong>2000'ler - 2010'lar</strong>
                             <em>ARM mobil cihazların merkezine yerleşti</em>
                         </button>
 
                         <button type="button" class="timeline-item" data-title="Apple Silicon etkisi"
-                            data-detail="ARM tabanlı masaüstü ve dizüstü işlemciler, yüksek performans ile düşük güç tüketiminin aynı cihazda mümkün olabileceğini gösterdi.">
+                            data-detail="Apple Silicon gibi ARM tabanlı masaüstü ve dizüstü işlemciler, ARM’ın yalnızca telefonlara uygun olmadığını gösterdi. CPU, GPU, NPU, birleşik bellek ve işletim sistemi optimizasyonunun birlikte tasarlanması sayesinde yüksek performans ile düşük güç tüketimi aynı cihazda mümkün hale geldi. Bu dönem ARM’ın dizüstü ve masaüstü sınıfına ciddi şekilde giriş yaptığı dönemdir.">
                             <span class="timeline-dot"></span>
                             <strong>2020 sonrası</strong>
                             <em>ARM masaüstü sınıfına çıktı</em>
                         </button>
 
                         <button type="button" class="timeline-item" data-title="Hibrit dönem"
-                            data-detail="x86 tarafı verimlilik çekirdeklerini benimserken, ARM tarafı daha yüksek performans sınıflarına ilerledi. Rekabet artık yalnızca komut seti değil, tüm sistem tasarımı seviyesinde yaşanıyor.">
+                            data-detail="Günümüzde x86 ve ARM arasındaki fark eskisi kadar keskin değildir. x86 tarafı verimlilik çekirdekleri, gelişmiş güç yönetimi ve hibrit mimarilerle daha verimli hale gelirken; ARM tarafı yüksek performanslı çekirdekler, masaüstü sınıfı SoC’ler ve bulut sunucu işlemcileriyle güçleniyor. Artık rekabet yalnızca komut seti üzerinden değil; üretim teknolojisi, yazılım optimizasyonu, bellek yapısı, özel hızlandırıcılar ve ekosistem üzerinden şekilleniyor.">
                             <span class="timeline-dot"></span>
                             <strong>Günümüz</strong>
                             <em>İki mimari birbirinden öğreniyor</em>
@@ -244,8 +257,12 @@
                         <span>Seçilen dönem</span>
                         <h3 id="timeline-title">x86'nın PC dünyasında yükselişi</h3>
                         <p id="timeline-text">
-                            x86 mimarisi kişisel bilgisayar ekosistemiyle büyüdü. Geniş yazılım uyumluluğu ve masaüstü
-                            performansı, bu mimariyi yıllarca PC dünyasının merkezi yaptı.
+                            x86 mimarisi, Intel 8086 ailesiyle başlayıp IBM PC ekosisteminin yaygınlaşmasıyla kişisel
+                            bilgisayar dünyasında standart hale geldi. Bu dönemde en büyük avantajı, yazılım
+                            geliştiricilerin ve donanım üreticilerinin aynı ekosistem etrafında toplanmasıydı. Geriye
+                            dönük uyumluluk sayesinde eski yazılımlar yeni işlemcilerde çalışmaya devam etti. Bu durum
+                            x86’yı yalnızca teknik bir mimari değil, aynı zamanda güçlü bir yazılım ve donanım
+                            ekosistemi haline getirdi.
                         </p>
                     </div>
                 </div>
@@ -256,21 +273,29 @@
                     <p class="eyebrow">Mimari Temel</p>
                     <h2>Komut Seti Felsefesi: CISC vs RISC</h2>
                     <p>
-                        x86 daha karmaşık komutlarla donanım tarafında yük alırken, ARM daha sade komutlarla verimli
-                        işlem yürütmeye odaklanır.
+                        x86 daha karmaşık komutlarla donanım tarafında daha fazla işi tek komutta ifade etmeye
+                        çalışırken,
+                        ARM daha sade ve düzenli komutlarla verimli işlem yürütmeye odaklanır. Bu fark, iki mimarinin
+                        tarihsel gelişimini, güç tüketimini ve yazılım ekosistemini doğrudan etkilemiştir.
                     </p>
                 </header>
 
                 <p class="text-paragraph">
-                    <strong>CISC</strong> yaklaşımında tek bir komut daha fazla iş yapabilir. Bu, bazı işlemlerin daha
-                    az komutla ifade edilmesini sağlar
-                    fakat komut çözme aşamasını daha karmaşık hale getirebilir.
+                    <strong>CISC</strong> yaklaşımında tek bir komut daha fazla iş yapabilir. Örneğin bellekten veri
+                    alma,
+                    işlem yapma ve sonucu tekrar belleğe yazma gibi adımlar daha karmaşık bir komut içinde ifade
+                    edilebilir.
+                    Bu yaklaşım yazılım tarafında bazı işlemleri daha kısa gösterebilir; fakat işlemcinin komutu çözme
+                    aşamasını daha karmaşık hale getirebilir. x86 mimarisi bu yaklaşımın en bilinen örneklerinden
+                    biridir.
                 </p>
 
                 <p class="text-paragraph">
-                    <strong>RISC</strong> yaklaşımında ise komutlar daha sade ve düzenlidir. Karmaşık işlemler, basit
-                    komutların arka arkaya çalıştırılmasıyla yapılır.
-                    Bu yapı düşük güç tüketimi, sade donanım ve yüksek verimlilik açısından avantaj sağlayabilir.
+                    <strong>RISC</strong> yaklaşımında ise komutlar daha sade, düzenli ve tahmin edilebilir yapıdadır.
+                    Karmaşık işlemler, basit komutların arka arkaya çalıştırılmasıyla gerçekleştirilir. Bu yapı
+                    işlemcinin
+                    komutları daha verimli çözmesine, daha düşük güç tüketmesine ve mobil cihazlarda daha uzun pil ömrü
+                    sunmasına yardımcı olabilir. ARM mimarisi bu yaklaşım üzerine kurulmuştur.
                 </p>
 
                 <div class="chart-card">
@@ -296,28 +321,28 @@
                         <tbody>
                             <tr>
                                 <td>Komut seti yaklaşımı</td>
-                                <td>CISC</td>
-                                <td>RISC</td>
+                                <td>CISC, yani daha karmaşık ve geniş komut seti yaklaşımı.</td>
+                                <td>RISC, yani daha sade ve düzenli komut seti yaklaşımı.</td>
                             </tr>
                             <tr>
                                 <td>Geleneksel pazar</td>
-                                <td>PC, iş istasyonu, sunucu</td>
-                                <td>Telefon, tablet, IoT</td>
+                                <td>PC, iş istasyonu, oyun bilgisayarı ve sunucu sistemleri.</td>
+                                <td>Telefon, tablet, IoT cihazları ve gömülü sistemler.</td>
                             </tr>
                             <tr>
                                 <td>Güç tüketimi</td>
-                                <td>Yük altında yüksek olabilir</td>
-                                <td>Genelde daha verimlidir</td>
+                                <td>Yüksek performans altında daha fazla güç tüketebilir.</td>
+                                <td>Genellikle düşük güç tüketimi ve yüksek verimlilik hedefler.</td>
                             </tr>
                             <tr>
                                 <td>Yazılım uyumluluğu</td>
-                                <td>Çok geniş eski yazılım desteği</td>
-                                <td>Platforma bağlı uyumluluk</td>
+                                <td>Eski ve yeni masaüstü yazılımlarda çok geniş destek sunar.</td>
+                                <td>Platforma bağlı olarak yerel destek veya emülasyon gerekebilir.</td>
                             </tr>
                             <tr>
                                 <td>Modern eğilim</td>
-                                <td>Hibrit P-Core / E-Core</td>
-                                <td>Yüksek performanslı SoC tasarımları</td>
+                                <td>Hibrit P-Core / E-Core yapılarıyla verimliliği artırmaya çalışır.</td>
+                                <td>Yüksek performanslı SoC tasarımlarıyla masaüstü ve sunucu alanına yaklaşır.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -330,7 +355,9 @@
                     <h2>CISC ve RISC aynı işi nasıl yapar?</h2>
                     <p>
                         Aşağıdaki örnekte amaç aynı: <strong>A = B + C</strong>. Fark, bu işin işlemciye nasıl
-                        anlatıldığıdır.
+                        anlatıldığıdır. CISC tarafında işlem daha karmaşık bir komutla ifade edilebilirken, RISC
+                        tarafında
+                        aynı işlem daha küçük ve sade adımlara bölünür.
                     </p>
                 </header>
 
@@ -385,7 +412,8 @@
                     <h2>Güç Tüketimi ve Isı Yönetimi</h2>
                     <p>
                         İşlemci performansı yalnızca hızlı olmakla ilgili değildir. Aynı işi daha az watt ile yapmak,
-                        modern cihazlarda kritik avantaj sağlar.
+                        modern cihazlarda kritik avantaj sağlar. Bu nedenle günümüzde performans kadar güç tüketimi,
+                        ısı üretimi ve soğutma ihtiyacı da önemli değerlendirme kriterleridir.
                     </p>
                 </header>
 
@@ -393,14 +421,16 @@
                     <div>
                         <p class="text-paragraph">
                             Masaüstü x86 işlemciler yüksek güç limitlerinde çok yüksek performans sunabilir. Ancak bu
-                            performans genellikle aktif soğutma,
-                            daha büyük kasa ve daha yüksek enerji tüketimiyle birlikte gelir.
+                            performans genellikle aktif soğutma, daha büyük kasa, daha güçlü güç kaynağı ve daha yüksek
+                            enerji tüketimiyle birlikte gelir. Oyun bilgisayarları, render sistemleri ve profesyonel
+                            iş istasyonlarında bu durum kabul edilebilir olabilir.
                         </p>
 
                         <p class="text-paragraph">
                             ARM mimarisi ise mobil cihazlardan geldiği için düşük güç, düşük ısı ve uzun pil ömrü
-                            mantığıyla büyüdü.
-                            Bu yüzden “watt başına performans” kavramı ARM tarafında çok güçlü bir argümandır.
+                            mantığıyla büyüdü. Bu yüzden “watt başına performans” kavramı ARM tarafında çok güçlü bir
+                            argümandır. Özellikle fanless dizüstüler, tabletler, telefonlar ve gömülü sistemlerde ARM
+                            mimarisinin verimlilik avantajı öne çıkar.
                         </p>
                     </div>
 
@@ -467,7 +497,9 @@
                     <p class="eyebrow">İş Yükleri</p>
                     <h2>Performans Dinamikleri</h2>
                     <p>
-                        Hangi mimarinin daha iyi olduğu sorusunun cevabı, kullanılan cihaza ve iş yüküne göre değişir.
+                        Hangi mimarinin daha iyi olduğu sorusunun tek bir cevabı yoktur. Kullanılan cihaz, işletim
+                        sistemi, uygulama türü, soğutma kapasitesi, batarya beklentisi ve yazılım optimizasyonu sonucu
+                        doğrudan etkiler.
                     </p>
                 </header>
 
@@ -478,8 +510,10 @@
                         <div>
                             <h4>Yüksek Performanslı Hesaplama</h4>
                             <p>
-                                Oyun, 3D render, bilimsel hesaplama, yüksek frekans ihtiyacı ve geniş masaüstü yazılım
-                                desteği gibi alanlarda x86 güçlüdür.
+                                Oyun, 3D render, bilimsel hesaplama, video düzenleme, mühendislik yazılımları ve yüksek
+                                frekans ihtiyacı olan masaüstü uygulamalarda x86 hâlâ çok güçlüdür. Bunun temel nedeni,
+                                geniş yazılım uyumluluğu, güçlü ekran kartı ekosistemi ve yıllardır olgunlaşmış PC
+                                donanım altyapısıdır.
                             </p>
                         </div>
                     </article>
@@ -491,7 +525,10 @@
                             <h4>Verimlilik Odaklı Cihazlar</h4>
                             <p>
                                 Telefon, tablet, fanless dizüstü, IoT ve gömülü cihazlarda ARM düşük güç tüketimi
-                                sayesinde öne çıkar.
+                                sayesinde öne çıkar. Bu cihazlarda amaç yalnızca yüksek performans değildir; aynı
+                                zamanda
+                                az ısınmak, sessiz çalışmak, uzun pil ömrü sunmak ve küçük fiziksel alanda verimli
+                                işlem yapabilmektir.
                             </p>
                         </div>
                     </article>
@@ -503,8 +540,9 @@
                             <h4>Modern Karma Alan</h4>
                             <p>
                                 Bulut sunucuları, yapay zeka cihazları ve yeni nesil laptoplarda karar artık sadece CPU
-                                mimarisiyle değil;
-                                GPU, NPU, bellek ve yazılım optimizasyonuyla verilir.
+                                mimarisiyle değil; GPU, NPU, bellek bant genişliği, üretim teknolojisi ve yazılım
+                                optimizasyonuyla verilir. Bu yüzden modern sistemlerde işlemcinin tamamı bir bütün
+                                olarak değerlendirilmelidir.
                             </p>
                         </div>
                     </article>
@@ -517,6 +555,8 @@
                     <h2>Hangi kullanımda hangi mimari?</h2>
                     <p>
                         Bir senaryo seç. Sayfa, o senaryoda x86 ve ARM taraflarının göreceli avantajını açıklasın.
+                        Bu bölüm kesin bir satın alma önerisi değil; mimarilerin hangi kullanım alanlarında neden
+                        avantajlı olabildiğini anlatan pratik bir karşılaştırmadır.
                     </p>
                 </header>
 
@@ -538,8 +578,9 @@
                     </div>
 
                     <p id="case-text">
-                        Yüksek ekran kartı uyumluluğu, geniş oyun kütüphanesi ve masaüstü performans beklentisi
-                        nedeniyle x86 tarafı hâlâ çok güçlüdür.
+                        Yüksek ekran kartı uyumluluğu, geniş oyun kütüphanesi, sürücü desteği ve masaüstü performans
+                        beklentisi nedeniyle x86 tarafı oyun bilgisayarlarında hâlâ çok güçlüdür. ARM tabanlı sistemler
+                        bazı oyunlarda gelişme gösterse de PC oyun ekosistemi hâlâ büyük ölçüde x86 üzerine kuruludur.
                     </p>
 
                     <div class="score-area">
@@ -569,15 +610,17 @@
                     <p class="eyebrow">Modern Dönüşüm</p>
                     <h2>ARM neden masaüstüne yaklaşabildi?</h2>
                     <p>
-                        Modern başarı yalnızca ARM komut setinden gelmez. Çipin tamamının birlikte tasarlanması büyük
-                        fark oluşturur.
+                        Modern başarı yalnızca ARM komut setinden gelmez. Çipin tamamının birlikte tasarlanması,
+                        yazılımın donanıma göre optimize edilmesi ve özel hızlandırıcıların kullanılması büyük fark
+                        oluşturur.
                     </p>
                 </header>
 
                 <p class="text-paragraph">
                     Apple Silicon gibi örnekler, CPU mimarisinin tek başına yeterli olmadığını gösterdi. CPU, GPU, NPU,
-                    bellek denetleyicisi,
-                    medya motoru ve yazılım optimizasyonu birlikte çalıştığında verimlilik dramatik şekilde artabilir.
+                    bellek denetleyicisi, medya motoru, güvenlik birimleri ve işletim sistemi aynı hedef doğrultusunda
+                    tasarlandığında verimlilik ciddi biçimde artabilir. Bu yüzden modern işlemciler artık yalnızca
+                    “çekirdek sayısı” veya “GHz” üzerinden değerlendirilmemelidir.
                 </p>
 
                 <div class="modern-card">
@@ -588,25 +631,26 @@
                     <div class="feature-grid">
                         <article class="feature-card">
                             <h4>Birleşik Bellek</h4>
-                            <p>CPU ve GPU'nun aynı bellek havuzunu kullanması veri kopyalama ihtiyacını azaltır.</p>
+                            <p>CPU ve GPU'nun aynı bellek havuzunu kullanması veri kopyalama ihtiyacını azaltır. Bu da
+                                özellikle grafik, video ve yapay zeka işlemlerinde verimlilik sağlar.</p>
                         </article>
 
                         <article class="feature-card">
                             <h4>Özel Hızlandırıcılar</h4>
-                            <p>Video, yapay zeka ve güvenlik işlemleri için ayrı bloklar kullanmak verimliliği artırır.
-                            </p>
+                            <p>Video kodlama, yapay zeka, güvenlik ve görüntü işleme gibi görevler için ayrı bloklar
+                                kullanmak CPU üzerindeki yükü azaltır.</p>
                         </article>
 
                         <article class="feature-card">
                             <h4>SoC Entegrasyonu</h4>
                             <p>Birçok bileşenin tek çipte toplanması gecikmeyi, güç tüketimini ve kart karmaşıklığını
-                                azaltır.</p>
+                                azaltır. Bu yapı mobil ve ince cihazlarda büyük avantaj sağlar.</p>
                         </article>
 
                         <article class="feature-card">
                             <h4>Yazılım Optimizasyonu</h4>
-                            <p>İşletim sistemi, derleyici ve uygulamalar mimariye göre optimize edildiğinde performans
-                                yükselir.</p>
+                            <p>İşletim sistemi, derleyici ve uygulamalar mimariye göre optimize edildiğinde aynı
+                                donanımdan daha yüksek performans alınabilir.</p>
                         </article>
                     </div>
                 </div>
@@ -618,8 +662,8 @@
                     <h2>P-Core, E-Core ve big.LITTLE mantığı</h2>
                     <p>
                         Modern işlemciler artık tek tip çekirdeklerden oluşmak zorunda değil. Ağır işler güçlü
-                        çekirdeklere,
-                        hafif işler verimli çekirdeklere yönlendirilebilir.
+                        çekirdeklere, hafif ve arka plan işleri ise verimli çekirdeklere yönlendirilebilir. Bu sayede
+                        sistem hem yüksek performans hem de düşük güç tüketimi sunabilir.
                     </p>
                 </header>
 
@@ -641,7 +685,8 @@
                                 <div class="core-box p-core">P4</div>
                             </div>
 
-                            <p>Yüksek saat hızı, yüksek güç</p>
+                            <p>Yüksek saat hızı, yüksek güç tüketimi ve ağır işlemler için tasarlanmış çekirdeklerdir.
+                            </p>
                         </div>
 
                         <div class="vertical-divider"></div>
@@ -656,7 +701,8 @@
                                 <div class="core-box e-core">E4</div>
                             </div>
 
-                            <p>Düşük güç, arka plan işleri</p>
+                            <p>Düşük güç tüketimi, arka plan işleri ve hafif görevler için optimize edilmiş
+                                çekirdeklerdir.</p>
                         </div>
                     </div>
 
@@ -678,6 +724,8 @@
                     <h2>Teknik terimleri hızlıca öğren</h2>
                     <p>
                         Sunum sırasında karşına çıkabilecek temel kavramları sade açıklamalarla burada bulabilirsin.
+                        Bu bölüm, teknik terimleri ezberlemek yerine mantığını anlamana yardımcı olmak için
+                        hazırlanmıştır.
                     </p>
                 </header>
 
@@ -689,105 +737,122 @@
                 <div class="glossary-grid">
                     <article class="glossary-card" data-keywords="instruction set architecture komut seti">
                         <h3>ISA</h3>
-                        <p>Instruction Set Architecture. İşlemcinin anlayabildiği komutların genel yapısını ifade eder.
-                        </p>
+                        <p>Instruction Set Architecture anlamına gelir. İşlemcinin anlayabildiği komutların, register
+                            yapısının ve programcıya görünen temel kuralların genel adıdır.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="complex instruction set">
                         <h3>CISC</h3>
-                        <p>Karmaşık komut seti yaklaşımıdır. Tek komutla daha fazla iş yapılabilir.</p>
+                        <p>Karmaşık komut seti yaklaşımıdır. Tek bir komutla daha fazla iş yapılabilir; ancak komut
+                            çözme süreci daha karmaşık olabilir.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="reduced instruction set">
                         <h3>RISC</h3>
-                        <p>Sadeleştirilmiş komut seti yaklaşımıdır. Basit komutlar hızlı ve verimli çalıştırılır.</p>
+                        <p>Sadeleştirilmiş komut seti yaklaşımıdır. Basit ve düzenli komutlar kullanarak verimli, hızlı
+                            ve düşük güç tüketimli işlem yürütmeyi hedefler.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="system on chip">
                         <h3>SoC</h3>
-                        <p>CPU, GPU, NPU, bellek denetleyicisi gibi birimlerin tek çipte toplandığı sistemdir.</p>
+                        <p>System on Chip anlamına gelir. CPU, GPU, NPU, bellek denetleyicisi ve farklı donanım
+                            bloklarının tek çipte toplandığı sistemdir.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="thermal design power watt">
                         <h3>TDP</h3>
-                        <p>İşlemcinin soğutma tasarımında dikkate alınan yaklaşık ısı/güç sınıfını ifade eder.</p>
+                        <p>Thermal Design Power anlamına gelir. İşlemcinin soğutma tasarımında dikkate alınan yaklaşık
+                            güç ve ısı sınıfını ifade eder.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="instructions per cycle">
                         <h3>IPC</h3>
-                        <p>Bir saat döngüsünde tamamlanabilen işlem miktarıdır. Frekansla birlikte performansı etkiler.
-                        </p>
+                        <p>Instructions Per Cycle anlamına gelir. İşlemcinin bir saat döngüsünde ne kadar iş
+                            tamamlayabildiğini gösterir. Frekansla birlikte performansı etkiler.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="önbellek cache memory">
                         <h3>Cache</h3>
-                        <p>İşlemcinin sık kullanılan verilere hızlı ulaşmasını sağlayan küçük ve hızlı bellektir.</p>
+                        <p>İşlemcinin sık kullanılan verilere RAM’den çok daha hızlı ulaşmasını sağlayan küçük ve hızlı
+                            bellektir. L1, L2 ve L3 gibi seviyeleri bulunur.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="neural processing unit ai">
                         <h3>NPU</h3>
-                        <p>Yapay zeka işlemlerini daha verimli çalıştırmak için tasarlanan özel hızlandırıcıdır.</p>
+                        <p>Neural Processing Unit anlamına gelir. Yapay zeka ve makine öğrenmesi işlemlerini CPU’ya göre
+                            daha verimli çalıştırmak için tasarlanan özel hızlandırıcıdır.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="graphics processing unit">
                         <h3>GPU</h3>
-                        <p>Grafik ve paralel hesaplama işlemlerinde kullanılan özel işlem birimidir.</p>
+                        <p>Graphics Processing Unit anlamına gelir. Grafik işleme yanında paralel hesaplama, video
+                            işleme ve yapay zeka gibi alanlarda da kullanılan özel işlem birimidir.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="emulation rosetta uyumluluk">
                         <h3>Emülasyon</h3>
                         <p>Bir mimari için yazılmış kodun farklı bir mimaride çalıştırılmasını sağlayan çeviri
-                            yöntemidir.</p>
+                            yöntemidir. Uyumluluk sağlar fakat bazen performans kaybı oluşturabilir.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="clock speed frequency hz">
                         <h3>Clock Speed</h3>
-                        <p>İşlemcinin saniyede kaç işlem yapabildiğini gösterir (Hz).</p>
+                        <p>İşlemcinin saniyedeki çalışma döngüsü sayısını ifade eder. Genellikle GHz ile ölçülür; ancak
+                            tek başına gerçek performansı belirlemez.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="latency delay gecikme">
                         <h3>Latency</h3>
-                        <p>Bir işlemin başlaması ile sonucu arasındaki gecikme süresidir.</p>
+                        <p>Bir işlemin başlaması ile sonucunun alınması arasındaki gecikme süresidir. Düşük gecikme,
+                            özellikle oyun ve gerçek zamanlı işlemlerde önemlidir.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="throughput işlem kapasitesi">
                         <h3>Throughput</h3>
-                        <p>Birim zamanda tamamlanan toplam işlem miktarıdır.</p>
+                        <p>Birim zamanda tamamlanan toplam işlem miktarıdır. Bir sistemin aynı anda ne kadar işi
+                            bitirebildiğini anlamak için kullanılır.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="multithreading thread">
                         <h3>Multithreading</h3>
-                        <p>İşlemcinin aynı anda birden fazla iş parçacığını çalıştırabilmesidir.</p>
+                        <p>İşlemcinin aynı anda birden fazla iş parçacığını çalıştırabilmesidir. Çoklu görevlerde ve
+                            paralel çalışan uygulamalarda performansı artırabilir.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="single core performance">
                         <h3>Single Core</h3>
-                        <p>Tek çekirdeğin performansını ifade eder.</p>
+                        <p>Tek bir işlemci çekirdeğinin performansını ifade eder. Bazı oyunlar ve eski uygulamalar hâlâ
+                            güçlü tek çekirdek performansından çok etkilenir.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="multi core parallel">
                         <h3>Multi Core</h3>
-                        <p>Birden fazla çekirdeğin birlikte çalışmasıdır.</p>
+                        <p>Birden fazla çekirdeğin birlikte çalışmasıdır. Render, video işleme, sunucu uygulamaları ve
+                            paralel hesaplama gibi işlerde avantaj sağlar.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="pipeline cpu işlem hattı">
                         <h3>Pipeline</h3>
-                        <p>Komutların aşamalara bölünerek sırayla işlenmesidir.</p>
+                        <p>Komutların alma, çözme ve çalıştırma gibi aşamalara bölünerek sırayla işlenmesidir. Amaç
+                            işlemcinin daha düzenli ve hızlı çalışmasını sağlamaktır.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="branch prediction tahmin">
                         <h3>Branch Prediction</h3>
-                        <p>İşlemcinin hangi komutun geleceğini tahmin etmesidir.</p>
+                        <p>İşlemcinin koşullu dallanmalarda hangi yolun izleneceğini önceden tahmin etmesidir. Doğru
+                            tahmin performansı artırır, yanlış tahmin gecikme oluşturur.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="instruction cycle işlem döngüsü">
                         <h3>Instruction Cycle</h3>
-                        <p>Bir komutun alınması, çözülmesi ve çalıştırılması sürecidir.</p>
+                        <p>Bir komutun bellekten alınması, çözülmesi, çalıştırılması ve sonucun yazılması sürecidir.
+                            İşlemcinin temel çalışma döngüsünü açıklar.</p>
                     </article>
 
                     <article class="glossary-card" data-keywords="frequency turbo boost">
                         <h3>Turbo Boost</h3>
-                        <p>İşlemcinin kısa süreliğine frekansını artırarak daha yüksek performans sunmasıdır.</p>
+                        <p>İşlemcinin sıcaklık ve güç sınırları uygunsa kısa süreliğine frekansını artırarak daha yüksek
+                            performans sunmasıdır.</p>
                     </article>
                 </div>
             </section>
@@ -798,7 +863,8 @@
                     <h2>Senin senaryona hangi mimari daha yakın?</h2>
                     <p>
                         Bu test kesin teknik karar vermez; ama kullanım önceliklerine göre x86, ARM veya dengeli
-                        yaklaşımı önerir.
+                        yaklaşımı önerir. Gerçek seçim yapılırken bütçe, işletim sistemi, kullanılacak yazılımlar ve
+                        cihaz tipi de ayrıca değerlendirilmelidir.
                     </p>
                 </header>
 
@@ -856,8 +922,10 @@
                     <p class="eyebrow">Final Değerlendirme</p>
                     <h2>Sonuç: Mimari savaşı artık tek boyutlu değil</h2>
                     <p>
-                        Geçmişte x86 performans, ARM verimlilik anlamına geliyordu. Günümüzde bu ayrım çok daha karmaşık
-                        hale geldi.
+                        Geçmişte x86 çoğunlukla yüksek performans, ARM ise verimlilik anlamına geliyordu. Günümüzde
+                        bu ayrım çok daha karmaşık hale geldi. Çünkü modern işlemciler yalnızca komut setinden ibaret
+                        değildir; çip tasarımı, yazılım desteği, özel hızlandırıcılar ve enerji yönetimi de sonucu
+                        belirler.
                     </p>
                 </header>
 
@@ -866,8 +934,9 @@
                         <span>01</span>
                         <h3>x86 hâlâ güçlü</h3>
                         <p>
-                            Masaüstü, oyun, profesyonel iş istasyonu ve geniş yazılım uyumluluğu gereken senaryolarda
-                            x86 çok güçlü konumdadır.
+                            Masaüstü, oyun, profesyonel iş istasyonu, sunucu ve geniş yazılım uyumluluğu gereken
+                            senaryolarda x86 çok güçlü konumdadır. Özellikle yıllardır oluşmuş PC ekosistemi bu mimariye
+                            büyük avantaj sağlar.
                         </p>
                     </article>
 
@@ -875,8 +944,9 @@
                         <span>02</span>
                         <h3>ARM hızla büyüyor</h3>
                         <p>
-                            Mobil cihazlar, verimli laptoplar, SoC sistemleri ve bazı bulut iş yüklerinde ARM çok ciddi
-                            avantajlar sunar.
+                            Mobil cihazlar, verimli laptoplar, SoC sistemleri ve bazı bulut iş yüklerinde ARM ciddi
+                            avantajlar sunar. Düşük güç tüketimi ve yüksek entegrasyon kabiliyeti ARM’ın en önemli
+                            güçlü yanlarıdır.
                         </p>
                     </article>
 
@@ -884,8 +954,9 @@
                         <span>03</span>
                         <h3>Asıl rekabet sistem seviyesinde</h3>
                         <p>
-                            CPU çekirdeği, GPU, NPU, bellek, üretim teknolojisi ve yazılım optimizasyonu birlikte
-                            değerlendirilmelidir.
+                            CPU çekirdeği, GPU, NPU, bellek, üretim teknolojisi, soğutma kapasitesi ve yazılım
+                            optimizasyonu birlikte değerlendirilmelidir. Bu yüzden modern işlemci karşılaştırmaları
+                            tek bir teknik özellikle açıklanamaz.
                         </p>
                     </article>
                 </div>
@@ -893,8 +964,7 @@
                 <div class="result-box">
                     <strong>Sunum cümlesi:</strong>
                     “Gelecekte kazananı yalnızca x86 veya ARM etiketi belirlemeyecek; watt başına performans, yazılım
-                    ekosistemi,
-                    özel hızlandırıcılar ve bütünleşik sistem tasarımı belirleyecek.”
+                    ekosistemi, özel hızlandırıcılar ve bütünleşik sistem tasarımı belirleyecek.”
                 </div>
             </section>
         </main>
